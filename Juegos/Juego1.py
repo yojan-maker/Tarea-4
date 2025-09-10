@@ -3,7 +3,7 @@ import random
 import os
 import sys
 
-# --- Inicialización ---------
+# --- Inicialización ------
 pygame.init()
 SCREEN_W, SCREEN_H = 800, 600
 screen = pygame.display.set_mode((SCREEN_W, SCREEN_H))
@@ -27,13 +27,13 @@ LANE_LINE = (255, 255, 255)
 # -- Paths --
 ASSET_PATH = "assets"
 
-# ------- Música retro de fondo -----
+# ------ Música retro de fondo -----
 pygame.mixer.init()
 music_path = os.path.join(ASSET_PATH, "sounds", "retro_music2.mp3")
 if os.path.exists(music_path):
     pygame.mixer.music.load(music_path)
     pygame.mixer.music.set_volume(0.5)  
-    pygame.mixer.music.play(-1)         # loop infinito
+    pygame.mixer.music.play(-1)    # loop infinito
 
 # --- Función para cargar imágenes --
 def load_image(name, size):
@@ -71,7 +71,7 @@ def player_rect(player_lane):
 def draw_player(player_lane):
     screen.blit(player_img, player_rect(player_lane))
 
-# ------ Enemigos ----------
+# ------ Enemigos ------
 enemy_w, enemy_h = 115, 100
 enemy_imgs = [
     load_image(f"car_enemy{i}.png", (enemy_w, enemy_h)) for i in range(1, 7)
@@ -91,7 +91,7 @@ def spawn_enemy(level=1):
 def draw_enemy(enemy):
     screen.blit(enemy[2], (enemy[0], enemy[1]))
 
-# --------------- Partículas ----
+# -------- Partículas ----
 particles = []
 
 def add_particles(x, y, color, count=10):
@@ -118,7 +118,7 @@ def draw_particles():
         color = p['color'] + (alpha,)
         pygame.draw.circle(screen, color, (int(p['x']), int(p['y'])), p['size'])
 
-# ---- Dibujo carretera ------------------
+# ---- Dibujo carretera ---------
 def draw_road(dash_offset, level=1):
     screen.fill(GRASS)
     asphalt_color = ASPHALT
@@ -136,7 +136,7 @@ def draw_road(dash_offset, level=1):
             pygame.draw.rect(screen, LANE_LINE, (x-3,y,6,dash_h))
             y += dash_h + gap
 
-# ---- Fuente ---------
+# ---- Fuente -------
 try:
     font = pygame.font.Font(os.path.join(ASSET_PATH,"fonts/PressStart2P.ttf"), 20)
     small_font = pygame.font.Font(os.path.join(ASSET_PATH,"fonts/PressStart2P.ttf"), 16)
@@ -150,7 +150,7 @@ def draw_text_shadow(text, x, y, color=GREEN, shadow_color=BLACK, font_type=font
     main = font_type.render(text, True, color)
     screen.blit(main, (x, y))
 
-# ---- Bucle principal de juego -
+# ---- Bucle principal de juego -----
 def game_loop(base_speed, spawn_rate, max_enemies, level, lives):
     global particles
     player_lane = LANES//2
