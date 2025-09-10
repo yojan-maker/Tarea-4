@@ -51,4 +51,11 @@ cd Tarea-4
 
 - Fuentes tipo arcade.
 
+## 📷 Capturas
+
+![Image](https://github.com/user-attachments/assets/71f13813-0ac1-4980-bbcf-940830898e1c)
+
+![Image](https://github.com/user-attachments/assets/0f2fb270-b140-47d5-b5b1-35dd39f534be)
+
+![Image](https://github.com/user-attachments/assets/abe2a919-6e53-43ac-982e-80bd5d109adf)
 
