@@ -1,41 +1,54 @@
-# 🎮 Colección de Juegos Retro en Python - Pygame
+# 🎮 Colección de Juegos Pygame - Tarea 4
 
-¡Bienvenido a mi colección de **3 juegos retro en Python**! Todos están desarrollados usando **Pygame**, con música retro y gráficos sencillos pero divertidos.  
-
----
-
-## 🕹️ Juegos incluidos
-
-| Juego | Descripción | Controles |
-|-------|------------|----------|
-| **Juego de Evasión 3** | Evita los autos en la carretera mientras acumulas puntos y avanzas niveles. | ← / → para moverte entre carriles |
-| **Agar.io Style - Recolección** | Crece comiendo comida y evitando enemigos más grandes. | Mueve el ratón para dirigir al jugador |
-| **Space Invaders Retro** | Defiende la base disparando a oleadas de enemigos y al jefe final. | ← / → para moverte, SPACE para disparar |
+**Autor:** Yojan G. (yojan-maker)  
+**Repositorio:** [Tarea-4](https://github.com/yojan-maker/Tarea-4)
 
 ---
 
-## ⚡ Características
+## 🕹 Juegos incluidos
 
-- Música retro de fondo 🎵
-- Partículas y efectos visuales 🎨
-- 3 niveles de dificultad / niveles progresivos  
-- Pantallas de **Game Over** y **Victoria**  
-- Jefes finales y enemigos
+1. **Juego de Evasión de Autos**  
+   - Evita el tráfico y sobrevive el mayor tiempo posible.
+   - Diferentes niveles de dificultad: Fácil, Medio, Difícil.
+   - Efectos de partículas y música retro de fondo.
+
+2. **Juego de Recolección tipo Agar.io**  
+   - Controlas una célula que crece al comer comida y enemigos más pequeños.
+   - Evita enemigos más grandes y bombas.
+   - Incluye niveles progresivos con láseres y obstáculos.
+
+3. **Juego de Naves (Space Invaders Retro)**  
+   - Defiende la tierra eliminando oleadas de enemigos y un jefe final.
+   - Incluye escoltas, disparos enemigos y música retro.
+   - Niveles progresivos y sistema de vidas.
 
 ---
 
-## 💻 Instalación
+## ⚡ Requisitos
 
-1. Clona el repositorio:
+- Python 3.8+  
+- [Pygame](https://www.pygame.org/)  
+- Para instalar dependencias:
 
 ```bash
-git clone https://github.com/....
-cd TU-REPO
+pip install -r requirements.txt
 ```
 
-pip install -r requirements.txt
+🚀 Cómo ejecutar
+
 ```bash
-pip install -r requirements.txt
-
+git clone https://github.com/yojan-maker/Tarea-4.git
+cd Tarea-4
 ```
+
+## 🎨 Recursos incluidos
+
+ **Carpeta assets con:**
+
+- Imágenes de jugadores, enemigos, íconos de vidas, etc.
+
+- Música retro y sonidos.
+
+- Fuentes tipo arcade.
+
 
