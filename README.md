@@ -29,7 +29,7 @@
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/TU-USUARIO/TU-REPO.git
+git clone https://github.com/....
 cd TU-REPO
 ```
 
