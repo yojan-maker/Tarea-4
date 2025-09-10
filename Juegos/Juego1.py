@@ -7,7 +7,7 @@ import sys
 pygame.init()
 SCREEN_W, SCREEN_H = 800, 600
 screen = pygame.display.set_mode((SCREEN_W, SCREEN_H))
-pygame.display.set_caption("Juego de Evasión 3")
+pygame.display.set_caption("Juego de Evasión ")
 clock = pygame.time.Clock()
 
 # -------- Colores -----
@@ -206,7 +206,7 @@ def game_loop(base_speed, spawn_rate, max_enemies, level, lives):
         lives_color = GREEN if lives>=3 else (ORANGE if lives==2 else RED)
         draw_text_shadow(f"Vidas: {lives}", 10, 70, lives_color)
         draw_text_shadow(f"Objetivo: {level_complete_score}", SCREEN_W-350, 10)
-        draw_text_shadow(f"Velocidad: {'■'*level}", SCREEN_W-250, 40, score_color)
+        draw_text_shadow(f"Velocidad: {'#'*level}", SCREEN_W-250, 40, score_color)
 
         pygame.display.update()
         clock.tick(60)
